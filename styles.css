@@ -244,6 +244,11 @@ ul { list-style: none; margin: 0; padding: 0; }
 .ticket::before { left: -10px; border-left-color: transparent; }
 .ticket::after { right: -10px; border-right-color: transparent; }
 
+.ticket__head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+.price {
+  font-family: var(--font-display); font-weight: 800; font-size: 1.3rem;
+  color: var(--pink); white-space: nowrap; flex: none;
+}
 .ticket h4 { font-weight: 800; font-size: 1.35rem; }
 .ticket p { margin-top: 6px; font-size: 0.97rem; color: var(--ink); }
 
@@ -254,8 +259,9 @@ ul { list-style: none; margin: 0; padding: 0; }
   background: var(--yellow); border: 2.5px solid var(--navy); border-radius: 18px;
   box-shadow: 4px 4px 0 var(--navy);
   font-family: var(--font-display); font-weight: 800; font-size: 1.4rem; color: var(--navy);
-  padding: 16px 34px;
+  padding: 16px 34px; text-align: center;
 }
+.sweets__list .price { display: block; margin-top: 2px; font-size: 1.15rem; color: var(--navy); }
 
 /* ---------- Drinks ---------- */
 .bubbles {
@@ -270,6 +276,8 @@ ul { list-style: none; margin: 0; padding: 0; }
   transition: transform 0.2s ease;
 }
 .bubble:hover { transform: translateY(-4px) rotate(-3deg); }
+.bubble { flex-direction: column; gap: 3px; }
+.bubble__price { display: block; font-family: var(--font-body); font-weight: 800; font-size: 0.85rem; letter-spacing: 0.02em; }
 .bubble--pepsi  { background: var(--navy);   color: var(--white); border-color: var(--yellow); }
 .bubble--dew    { background: var(--teal); }
 .bubble--diet   { background: var(--pink);   color: var(--white); border-color: var(--navy); }
