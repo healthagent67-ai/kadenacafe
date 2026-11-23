@@ -92,7 +92,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--white); }
-.brand__logo { width: 52px; height: 52px; flex: none; }
+.brand__logo { width: 81px; height: 52px; flex: none; background: var(--white); border-radius: 12px; }
 .brand__text { display: flex; flex-direction: column; line-height: 1.15; }
 .brand__text strong { font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; }
 .brand__text small { font-size: 0.72rem; font-style: italic; opacity: 0.8; }
@@ -196,6 +196,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .section__sub strong { color: var(--pink); }
 
 /* ---------- About ---------- */
+.about__logo { width: min(280px, 72%); height: auto; margin: 0 auto 26px; }
 .about__text { margin-top: 22px; font-size: 1.2rem; }
 .pillars { margin-top: 32px; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
 .pillars li {
@@ -263,7 +264,8 @@ ul { list-style: none; margin: 0; padding: 0; }
 .bubble--tea    { background: var(--yellow); }
 .bubble--blue   { background: var(--navy);   color: var(--white); border-color: var(--teal); }
 .bubble--pink   { background: var(--blush);  border-color: var(--pink); }
-.bubble--pond   { background: var(--mist);   border: 4px dashed var(--teal); }
+.bubble--pond   { background: var(--mist);   border: 4px dashed var(--teal); width: 164px; height: 164px; flex-direction: column; gap: 4px; padding: 14px; }
+.bubble--pond small { font-family: var(--font-body); font-weight: 800; font-size: 0.8rem; line-height: 1.2; color: var(--teal-deep); }
 
 /* ---------- Hours & Visit ---------- */
 .section--visit { padding-top: 24px; padding-bottom: 72px; }
@@ -329,7 +331,10 @@ ul { list-style: none; margin: 0; padding: 0; }
   .hero { padding: 44px 0 56px; }
   .visit { padding: 22px; }
   .bubble { width: 98px; height: 98px; font-size: 0.95rem; }
+  .bubble--pond { width: 150px; height: 150px; }
   .brand__text strong { font-size: 1.3rem; }
+  .brand__text small { font-size: 0.62rem; white-space: nowrap; }
+  .brand { gap: 10px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

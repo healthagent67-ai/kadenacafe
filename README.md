@@ -9,8 +9,8 @@ Plain HTML, CSS and a little JavaScript. No build step.
 - `index.html` – the page (menu, about, drinks, hours & visit)
 - `styles.css` – all styling and the brand palette (CSS variables at the top)
 - `script.js` – mobile menu toggle and active-link highlighting
-- `assets/logo.svg` – logo (also used as the favicon)
-
+- `assets/logo.png` – full Kadena Cafe logo (About section)
+- `assets/logo-mark.png` – palm/sun/wave crop of the logo (header and favicon)
 ## Run locally
 
 Open `index.html` in a browser, or serve the folder with any static server, e.g.:
