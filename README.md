@@ -10,7 +10,11 @@ Plain HTML, CSS and a little JavaScript. No build step.
 - `styles.css` – all styling and the brand palette (CSS variables at the top)
 - `script.js` – mobile menu toggle and active-link highlighting
 - `assets/logo.png` – full Kadena Cafe logo (About section)
-- `assets/logo-mark.png` – palm/sun/wave crop of the logo (header and favicon)
+- `assets/logo-mark.png` – palm/sun/wave crop of the logo (header)
+- `favicon.ico`, `assets/favicon-*.png`, `assets/apple-touch-icon.png`, `assets/icon-*.png`, `site.webmanifest` – favicons and app icons
+- `assets/og-image.png` – 1200x630 image shown when the link is shared (Facebook, iMessage, etc.)
+- `robots.txt`, `sitemap.xml` – search engine files (domain: https://kadenacafe.com)
+
 ## Run locally
 
 Open `index.html` in a browser, or serve the folder with any static server, e.g.:
